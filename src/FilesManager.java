@@ -23,7 +23,7 @@ public class FilesManager
 
 	public static void createFile() throws IOException
 	{
-		FileOutputStream bytesFile = new FileOutputStream(fileDir.substring(0, fileDir.lastIndexOf(".")) + " - EDIT.mp4");
+		FileOutputStream bytesFile = new FileOutputStream(fileDir.substring(0, fileDir.lastIndexOf(".")) + " - EDIT" + fileDir.substring(fileDir.lastIndexOf(".")));
 		bytesFile.write(Converter.hexToBytes(hexDigits));
 		bytesFile.flush();
 		bytesFile.close();

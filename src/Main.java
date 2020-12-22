@@ -19,7 +19,11 @@ public class Main
 					FilesManager.createFile();
 				}
 			} else if (FilesManager.getFileDirectory().endsWith(".webm"))
-				System.out.println("coming soon");
+				if (Webm.checkFile())
+				{
+					while (!Webm.manipulationMode(input.readLine()));
+					FilesManager.createFile();
+				}
 
 		} while (input.readLine().equals("y"));
 		input.close();
