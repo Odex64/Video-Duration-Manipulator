@@ -16,7 +16,7 @@ public class Main
 				if (Mp4.checkDuration())
 				{
 					while (!Mp4.setNewDuration(input.readLine()));
-					FilesManager.createFile(Mp4.getFinalHexDigits());
+					FilesManager.createFile();
 				}
 			} else if (FilesManager.getFileDirectory().endsWith(".webm"))
 				System.out.println("coming soon");

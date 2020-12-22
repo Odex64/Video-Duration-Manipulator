@@ -21,10 +21,10 @@ public class FilesManager
 		return false;
 	}
 
-	public static void createFile(String finalHexDigits) throws IOException
+	public static void createFile() throws IOException
 	{
 		FileOutputStream bytesFile = new FileOutputStream(fileDir.substring(0, fileDir.lastIndexOf(".")) + " - EDIT.mp4");
-		bytesFile.write(Converter.hexToBytes(finalHexDigits));
+		bytesFile.write(Converter.hexToBytes(hexDigits));
 		bytesFile.flush();
 		bytesFile.close();
 		System.out.print("done | repeat(y/n)? ");
@@ -33,6 +33,11 @@ public class FilesManager
 	public static String getHexDigits()
 	{
 		return hexDigits;
+	}
+
+	public static void setHexDigits(String digits)
+	{
+		hexDigits = digits;
 	}
 
 	public static String getFileDirectory()
