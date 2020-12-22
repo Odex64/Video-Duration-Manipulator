@@ -1,4 +1,4 @@
-# Video-Duration-Manipulator
+# Video Duration Manipulator
 This small tool visually manipulates video length to trick people on social medias.
 
 ## What is it?
