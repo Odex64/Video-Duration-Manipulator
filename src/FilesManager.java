@@ -27,6 +27,7 @@ public class FilesManager
 		bytesFile.write(Converter.hexToBytes(finalHexDigits));
 		bytesFile.flush();
 		bytesFile.close();
+		System.out.print("done | repeat(y/n)? ");
 	}
 
 	public static String getHexDigits()

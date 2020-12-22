@@ -11,7 +11,6 @@ public class Main
 		{
 			System.out.print("Type input file: ");
 			while (!FilesManager.setFile(input.readLine()));
-
 			if (FilesManager.getFileDirectory().endsWith(".mp4"))
 			{
 				if (Mp4.checkDuration())
@@ -22,7 +21,6 @@ public class Main
 			} else if (FilesManager.getFileDirectory().endsWith(".webm"))
 				System.out.println("coming soon");
 
-			System.out.print("done | repeat(y/n)? ");
 		} while (input.readLine().equals("y"));
 		input.close();
 	}
